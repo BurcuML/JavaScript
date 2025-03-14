@@ -56,8 +56,23 @@ keys2 = Object.keys(laptop3);
 console.log(Object.keys(laptop3)); // returns an array of the keys (property names) of all enumerable properties of the laptop3 object.
 console.log(Object.values(laptop3)); //returns an array of the values of all enumerable properties of the laptop3 object.
 
-console.log(laptop3.brand);
 keys2.forEach(key2I => {
     console.log("Laptop 3: " + key2I + " : " + laptop3[key2I]);
     
 });
+
+console.log("Info about 3rd Laptop: " + laptop3.brand);
+keys2.forEach(key2I => {
+    console.log(laptop3[key2I]);
+});
+ 
+let user = {
+    name: "user1",
+    lastName: "user1LastName",
+    phone: 1234457855,
+    info : ()=>{
+        return `${user.name} ${user.lastName} has a phone number of ${user.phone}`;
+    },
+}
+
+console.log(user.info());
