@@ -76,3 +76,16 @@ let user = {
 }
 
 console.log(user.info());
+
+let { name, lastName, phone } = user;
+console.log(user);
+console.log(name, lastName, phone);
+console.log(lastName);
+console.log(phone); 
+
+
+let person={name:"Selin",city:"Ankara",favoriteColor:"aqua blue"}; 
+let {name:foo}=person; // Bu kod parçası, JavaScript'te nesne yıkımı (destructuring) kullanarak bir nesnenin name özelliğini alır ve onu foo adlı bir değişkene atar.
+// Bu ifade, person nesnesinin name özelliğini alır ve foo adlı bir değişkene atar. Yani, foo değişkeni person.name değerine sahip olur.
+
+console.log(foo)
