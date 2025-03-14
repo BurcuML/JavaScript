@@ -50,3 +50,14 @@ keys.forEach(keyI => {
 function yaz(){console.log("Merhaba Kodluyoruz")}
 console.log(yaz["name"]); //returns yaz function name
 console.log(yaz.name); //returns yaz function name
+
+keys2 = Object.keys(laptop3);
+
+console.log(Object.keys(laptop3)); // returns an array of the keys (property names) of all enumerable properties of the laptop3 object.
+console.log(Object.values(laptop3)); //returns an array of the values of all enumerable properties of the laptop3 object.
+
+console.log(laptop3.brand);
+keys2.forEach(key2I => {
+    console.log("Laptop 3: " + key2I + " : " + laptop3[key2I]);
+    
+});
