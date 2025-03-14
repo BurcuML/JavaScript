@@ -84,13 +84,16 @@ console.log(name, lastName, phone);
 console.log(lastName);
 console.log(phone); 
 
-let { name:userName, lastName:userLastName, ...newUser} = user;
+let { name:userName, lastName:userLastName, ...newUser} = user; //Bu JavaScript kodu, user adlı bir nesneyi parçalayarak belirli özellikleri alır ve geri kalan özellikleri yeni bir nesneye atar.
+// Bu ifade, user nesnesinin name ve lastName özelliklerini alır ve userName ve userLastName adlı iki değişkene atar. Geri kalan özellikleri newUser adlı bir nesneye atar.
+// Bu nedenle, userName ve userLastName değişkenleri name ve lastName değerlerine sahip olurken, newUser nesnesi user nesnesinin name ve lastName özelliklerini içermez ve user nesnesinin geri kalan özelliklerine sahip olur.
+//Bu şekilde, user nesnesinin belirli özelliklerini ayrı değişkenlere atarken, geri kalan özellikleri yeni bir nesne olarak saklayabilirsiniz.
 console.log(userName, userLastName, newUser);
 
 let person={name:"Selin",city:"Ankara",favoriteColor:"aqua blue"}; 
 let {name:foo}=person; // Bu kod parçası, JavaScript'te nesne yıkımı (destructuring) kullanarak bir nesnenin name özelliğini alır ve onu foo adlı bir değişkene atar.
 // Bu ifade, person nesnesinin name özelliğini alır ve foo adlı bir değişkene atar. Yani, foo değişkeni person.name değerine sahip olur. Çıktısı : Selin. 
 
-console.log(foo) 
+console.log(foo);
 
 //Destructuring bir obje veya bir array içinden her bir elemanın alınıp bir değişken içine kaydedilmesi.
